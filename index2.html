@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css2.css" />
+  <title>Petit Duran</title>
+</head>
+
+<body>
+  <div class="grid-container">
+    <header class="header">
+      <div class="brand">
+        <button onclick="openMenu()">
+          &#9776;
+        </button>
+        <a href="index2.html">Petit Duran</a>
+      </div>
+      <div class="header-links">
+        <a href="cart.html">Cart</a>
+        <a href="signin.html">Sign In</a>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <h3>Categorias de productos</h3>
+      <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+      <ul>
+        <li>
+          <a href="index.html">Vinos</a>
+        </li>
+
+        <li>
+          <a href="index.html">Aceites</a>
+        </li>
+        <li>
+            <a href="index.html">Packs Especiales</a>
+          </li>
+
+      </ul>
+    </aside>
+    <main class="main">
+      <div class="content">
+        <ul class="products">
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/merces.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Merçes</a>
+              </div>
+              <div class="product-brand">Do Costers del Segre</div>
+              <div class="product-price">15€</div>
+              <div class="product-rating">4.5 Estrellas (10 Reseñas)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/fogonussa.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Fogonussa</a>
+              </div>
+              <div class="product-brand">Do Costers del Segre</div>
+              <div class="product-price">10€</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/notblau.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Not Blau</a>
+              </div>
+              <div class="product-brand">Do Costers del Segre</div>
+              <div class="product-price">9e</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/clarors.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Clarors</a>
+              </div>
+              <div class="product-brand">Do Costers del Segre</div>
+              <div class="product-price">9,5€</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/aceite.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Botella 0,5L Aceite</a>
+              </div>
+              <div class="product-brand">Nike</div>
+              <div class="product-price">8€</div>
+              <div class="product-rating">4.5 Stars (10 Reviews)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/llauna.png" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Llauna 3L</a>
+              </div>
+              <div class="product-brand">Do Costers del Segre</div>
+              <div class="product-price">24€</div>
+              <div class="product-rating">4.5 Estrellas(10 Reseñas)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/garrafa-5l.png" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Garrafa 5L</a>
+              </div>
+              <div class="product-brand">Molí Duran</div>
+              <div class="product-price">24€</div>
+              <div class="product-rating">4.5 Estrellas(10 Reseñas)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/Lote_quesos.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Lote de quesos</a>
+              </div>
+              <div class="product-brand">Molí Duran</div>
+              <div class="product-price">24€</div>
+              <div class="product-rating">4.5 Estrellas(10 Reseñas)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/Lote_jamon.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Lote de jamón</a>
+              </div>
+              <div class="product-brand">Molí Duran</div>
+              <div class="product-price">24€</div>
+              <div class="product-rating">4.5 Estrellas(10 Reseñas)</div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/lote_pequeño_ecommerce.jpg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Lote de turrón</a>
+              </div>
+              <div class="product-brand">Molí Duran</div>
+              <div class="product-price">40€</div>
+              <div class="product-rating">4.5 Estrellas(10 Reseñas)</div>
+            </div>
+          </li>
+
+
+
+        </ul>
+      </div>
+
+    </main>
+    <footer class="footer">
+      Todos los derechos reservados.
+    </footer>
+  </div>
+  <script>
+    function openMenu() {
+      document.querySelector(".sidebar").classList.add("open");
+    }
+    function closeMenu() {
+      document.querySelector(".sidebar").classList.remove("open")
+    }
+  </script>
+</body>
+
+</html>
